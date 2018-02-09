@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.inner-box{
+    background: rgb(255, 255, 255);
+    margin: 2vh auto; 
+    width: 98%;
+    height: 95vh;
+    border: 2vh solid black;
+    border-radius: 1vh;
+
+}
+/* main page css */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto';
+    color: black; 
+
+
+}
+.name{
+    font-style: italic;
+    font-size: 25vh;  
+    cursor: default; 
+}
+
+.main-links{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100vh;
+    font-size: 3vh;
+}
+
+.main-links a{
+
+    text-decoration: none;
+    color:black;
+}
+
+.main-links a:hover{
+    text-decoration: none;
+    color:rgb(102, 102, 102);
+}   
+
+/*auxiliary page links */
+
+.links-header{
+    display:flex;
+    justify-content: flex-start;   
+    font-family: 'Roboto';
+    background: linear-gradient(rgba(0, 0, 0, 0.247), white);
+}
+
+.page-title{
+    font-size:8vh;
+    font-style:italic;
+    margin-top: -1.0vh;
+    margin-left:1vh;
+}
+
+.page-title a{
+    text-decoration: none;
+    color:black;
+}
+
+.page-title a:hover{
+    text-decoration: none;
+    color:rgb(102, 102, 102);
+}   
+
+.page-links{
+    margin-left: 3vh;
+    margin-top: 4.40vh;
+    font-size: 3vh;
+    display: flex;
+    justify-content: space-between;
+    width:35vh;
+    list-style-type: none;
+}
+
+.page-links a{
+    text-decoration: none;
+    color:black;
+}
+
+.page-links a:hover{
+    text-decoration: none;
+    color:rgb(102, 102, 102);
+}   
+
+.current-page-link{
+    font-weight: 400;
+    cursor: default; 
+}
+
+/* secondary page content */
+
+.secondary-content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-inner{
+    width:190vh;
+    height:76vh;
+    position:relative;
+    overflow:hidden;
+    float:left;    
+    border: solid black 0.5vh;
+}
+
+.slider-inner img{
+	display:none;
+	width:190vh;
+    height:76vh;
+}   
+
+
+.slider-inner img.active{
+	display:inline-block;
+}
+
+.prev,.next{
+    float:left;
+    height: 10vh;
+	margin-top:30vh;
+	cursor: pointer;
+}
+
+.prev{
+	position:relative;
+	margin-right:-8vh;
+	z-index:100;
+}
+
+.next{
+	position:relative;
+	margin-left: -8vh;
+    z-index:100;
+}
