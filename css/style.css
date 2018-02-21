@@ -101,6 +101,34 @@
     cursor: default; 
 }
 
+/* about page */
+
+.aboutContent{
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutHeader{
+    font-size: 30px;
+}
+
+.textContent{
+    height: 90%;
+}
+.photoBox{
+    margin-left: 20px;
+    margin-right: 50px;
+}
+#myPicture{
+    height: 400px;
+    border-radius: 50%;
+
+}
+
+
 /* secondary page content */
 
 .secondary-content{
